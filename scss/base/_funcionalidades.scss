@@ -1,0 +1,293 @@
+//? Página Index
+
+//! Variables Header
+$header-bg-color: rgba(255, 255, 255, 0.5);
+$primary-color: #030512;
+$highlight-color: #009D6E;
+$padding-lg: 15px 30px;
+$padding-md: 10px 20px;
+$padding-sm: 10px 20px;
+$logo-max-height: 40px;
+$navbar-brand-padding-left: 90px;
+$nav-link-margin-left: 20px;
+
+//! Variables Hero
+
+// Lista de colores
+$colors: (
+    primary: #009D6E,
+    // Color principal para botones y elementos destacados
+    secondary: #6682FF,
+    // Color de hover para botones
+    white: #fff // Color blanco
+);
+
+// Clase Verde
+.verde {
+    color: map-get($colors, primary) !important;
+}
+
+// Mixin para botones
+@mixin btn-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color !important;
+    text-decoration: none !important;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+// Tipografía
+$font-size-lg: 35px; // Tamaño de fuente grande para títulos
+$font-size-md: 28px; // Tamaño de fuente mediano para títulos
+$font-size-sm: 24px; // Tamaño de fuente pequeño para títulos
+$line-height-lg: 1.2; // Interlineado para títulos grandes
+$line-height-md: 1.4; // Interlineado para párrafos
+
+// Padding
+$padding-hero-lg: 100px; // Padding grande para la sección hero
+$padding-hero-md: 50px 20px; // Padding mediano para la sección hero
+$padding-hero-sm: 20px; // Padding pequeño para la sección hero
+$padding-column2-right: 45%; // Padding derecho para la columna de texto en pantallas grandes
+$padding-column2-bottom: 25px; // Padding inferior para la columna de texto
+
+
+//! Variables sección imágenes
+
+$image-padding: 30px 20px;
+$image-gap: 20px;
+$image-max-width-lg: 16%; // Tamaño de imagen para pantallas grandes
+$image-max-width-md: 30%; // Tamaño de imagen para pantallas medianas
+
+
+//! Variables para sección 2
+
+$seccion2-bg-color: map-get($colors, white); // Color de fondo de la sección 2, reutilizando el color blanco
+
+$padding-seccion2-lg: 20px 100px; // Padding para pantallas grandes
+$padding-seccion2-md: 60px 50px; // Padding para pantallas medianas
+$padding-seccion2-sm: 80px 20px 20px; // Padding para pantallas pequeñas
+
+$font-size-encabezado2-lg: 25px; // Tamaño de fuente para encabezados grandes en sección 2
+$font-size-encabezado2-md: 22px; // Tamaño de fuente para encabezados medianos en sección 2
+$font-size-encabezado2-sm: 20px; // Tamaño de fuente para encabezados pequeños en sección 2
+
+$paragraph-font-size2-lg: 18px; // Tamaño de fuente para párrafos grandes en sección 2
+$paragraph-font-size2-md: 16px; // Tamaño de fuente para párrafos medianos en sección 2
+$paragraph-font-size2-sm: 15px; // Tamaño de fuente para párrafos pequeños en sección 2
+
+$margin-top-boton2: 30px; // Margen superior para el botón en la sección 2
+
+
+//! Variables Sección 3
+
+$seccion3-bg-color: map-get($colors, white); // Reutilizando el color blanco
+$seccion3-border-color: #00A651; // Color del borde de la sección 3
+$seccion3-border-radius: 50px; // Radio de borde para la sección 3
+$seccion3-padding-lg: 25px 50px; // Padding para pantallas grandes
+$seccion3-padding-md: 25px 30px; // Padding para pantallas medianas
+$seccion3-padding-sm: 25px 30px; // Padding para pantallas pequeñas
+$seccion3-margin-lg: 100px; // Margen para pantallas grandes
+$seccion3-margin-md: 50px 100px; // Margen para pantallas medianas
+$seccion3-margin-sm: 30px 15px; // Margen para pantallas pequeñas
+
+$font-size-encabezado3-lg: 20px; // Tamaño de fuente para encabezados grandes en sección 3
+$font-size-encabezado3-md: 18px; // Tamaño de fuente para encabezados medianos en sección 3
+$font-size-encabezado3-sm: 16px; // Tamaño de fuente para encabezados pequeños en sección 3
+
+$paragraph-font-size3-lg: 17px; // Tamaño de fuente para párrafos grandes en sección 3
+$paragraph-font-size3-sm: 16px; // Tamaño de fuente para párrafos pequeños en sección 3
+
+
+//! Variables Sección 4
+
+$seccion4-padding-top: 25px;
+$seccion4-padding-bottom: 50px;
+$seccion4-padding-sides: 100px;
+
+$seccion4-gap: 60px; // Espacio entre elementos de la sección 4
+$seccion4-margin-top: 100px;
+
+$seccion4-border-color: map-get($colors, secondary); // Color del borde de los ítems
+$seccion4-border-radius: 25px; // Radio de borde para los ítems
+
+$seccion4-icono-max-width: 70px; // Tamaño máximo para los íconos
+
+$font-size-encabezado4: 22px; // Tamaño de fuente para el encabezado de la sección 4
+$font-size-titulo4: 17px; // Tamaño de fuente para los títulos de los ítems
+$font-size-parrafo4: 16px; // Tamaño de fuente para los párrafos de los ítems
+
+// Colores adicionales
+$carousel-control-bg: map-get($colors, secondary); // Color para los controles del carrusel
+
+
+//! Variables Sección 5
+
+$seccion5-padding-top: 50px;
+$seccion5-padding-bottom: 100px;
+$seccion5-padding-sides: 50px;
+
+$seccion5-margin-top: 30px;
+$seccion5-border-color: #00A651; // Color del borde para los ítems
+$seccion5-border-radius: 50px; // Radio del borde de los ítems
+$seccion5-bg-color: #f9f9f9; // Color de fondo de los ítems
+
+$seccion5-img-height: 200px; // Altura de las imágenes
+$seccion5-font-size-titulo: 18px; // Tamaño de fuente para los títulos de los ítems
+$seccion5-font-color-titulo: map-get($colors, primary); // Color de los títulos
+
+$seccion5-font-size-parrafo: 15px; // Tamaño de fuente para los párrafos
+
+// Variables de media queries
+$seccion5-grid-gap-md: 20px; // Espacio entre elementos en tablet
+
+
+//! Variables Footer
+
+$footer-bg-color: #030512;
+$footer-text-color: #fff;
+$footer-padding-top: 50px;
+$footer-padding-bottom: 60px;
+$footer-padding-sides: 50px;
+$footer-font-size: 14px;
+$footer-line-height: 1.4;
+
+$social-icon-bg-color: #fff;
+$social-icon-color: $footer-bg-color;
+$social-icon-size: 35px;
+$social-icon-font-size: 15px;
+
+$footer-border-top-color: #7a7a7a;
+$footer-bottom-margin-top: 30px;
+$footer-bottom-padding-top: 10px;
+
+// Media queries variables
+$footer-padding-sides-md: 20px;
+$footer-padding-sides-sm: 15px;
+$footer-item-margin-md: 20px 0;
+$footer-item-margin-sm: 15px 0;
+$footer-payment-gap-md: 15px;
+$footer-payment-gap-sm: 10px;
+$footer-payment-img-max-width-md: 80px;
+$footer-payment-img-max-width-sm: 70px;
+
+
+//? Página Finance
+
+//! Variables Hero2
+
+$hero2-bg-overlay: rgba(255, 255, 255, 0.5); // Superposición de color para el fondo del hero
+$hero2-padding-lg: 100px; // Padding grande para la sección hero2
+$hero2-padding-md: 50px; // Padding mediano para la sección hero2
+$hero2-padding-sm: 20px; // Padding pequeño para la sección hero2
+$hero2-bg-color-md: rgba(255, 255, 255, 0.7); // Color de fondo para pantallas medianas
+$hero2-bg-color-sm: rgba(255, 255, 255, 0.5); // Color de fondo para pantallas pequeñas
+
+
+//! Variables para Sección 2 Finance
+
+$seccion2finance-bg-color: map-get($colors, white); // Color de fondo de la sección
+$seccion2finance-padding-lg: 100px; // Padding para pantallas grandes
+$seccion2finance-padding-md: 50px; // Padding para pantallas medianas
+$seccion2finance-padding-sm: 20px; // Padding para pantallas pequeñas
+
+$accordion-bg-color: #f0f0f0; // Color de fondo para los botones del acordeón
+$accordion-font-weight: bold; // Peso de la fuente para los botones del acordeón
+$accordion-border-radius: 15px; // Radio de borde para las imágenes en el acordeón
+
+$video-width-lg: 55%; // Ancho del video para pantallas grandes
+$video-width-md: 60%; // Ancho del video para pantallas medianas
+$video-width-sm: 80%; // Ancho del video para pantallas pequeñas
+$video-border-radius: 10px; // Radio de borde para el video
+
+
+//? Página Nosotros
+
+//! Variables Header Nosotros
+$header-bg-color-nosotros: rgba(255, 255, 255, 0.9); // Fondo con transparencia para la página Nosotros
+
+//! Variables Sección Hero
+$nosotros-hero-bg-color: map-get($colors, secondary); // Fondo azul
+$nosotros-hero-font-color: map-get($colors, white); // Color de fuente blanca
+$nosotros-hero-padding-lg: 50px 150px;
+$nosotros-hero-padding-md: 30px 20px;
+$nosotros-hero-padding-sm: 20px 10px;
+$nosotros-hero-font-size-lg: 30px;
+$nosotros-hero-font-size-md: 24px;
+$nosotros-hero-font-size-sm: 20px;
+
+//! Variables Sección 2
+$nosotros-section2-padding-lg: 70px 100px;
+$nosotros-section2-padding-md: 20px;
+$nosotros-section2-gap-lg: 100px;
+$nosotros-section2-gap-md: 50px;
+$nosotros-section2-gap-sm: 40px;
+
+//! Variables Valores
+$valores-padding-lg: 20px 100px;
+$valores-padding-md: 20px;
+$valores-padding-sm: 15px 10px;
+$valores-title-font-size: 32px;
+$valores-title-font-weight: 900;
+$valores-title-color: map-get($colors, secondary);
+$valores-text-font-size: 18px;
+$valores-text-color: #333;
+$valores-item-bg-color: map-get($colors, white); // Fondo blanco
+$valores-item-border-radius: 25px;
+$valores-item-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.267);
+$valores-item-padding: 20px;
+$valores-item-img-max-width: 80px;
+$valores-item-title-font-size: 24px;
+$valores-item-title-color: map-get($colors, secondary);
+$valores-item-text-font-size: 16px;
+$valores-item-text-color: $primary-color;
+
+
+//? Página mentores
+
+//! Variables Hero2 Mentores
+$hero2mentores-bg-overlay: rgba(255, 255, 255, 0.5); // Superposición de color para el fondo del hero mentores
+$hero2mentores-padding-lg: 100px; // Padding grande para la sección hero2
+$hero2mentores-padding-md: 50px; // Padding mediano para la sección hero2
+$hero2mentores-padding-sm: 20px; // Padding pequeño para la sección hero2
+
+//! Variables para Sección 2 Mentores
+$seccion2mentores-padding-lg: 100px; // Padding para pantallas grandes
+$seccion2mentores-padding-md: 50px; // Padding para pantallas medianas
+$seccion2mentores-padding-sm: 20px; // Padding para pantallas pequeñas
+
+$mentores-img-border-radius: 10px; // Radio del borde para las imágenes
+$mentores-img-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra para las imágenes
+
+//! Variables para Sección 3 Mentores
+$mentores-section3-padding-lg: 70px 100px; // Padding grande para la sección mentores 3
+$mentores-section3-padding-md: 50px; // Padding mediano para la sección mentores 3
+$mentores-section3-padding-sm: 20px; // Padding pequeño para la sección mentores 3
+$mentores-section3-gap-lg: 100px; // Gap grande para la sección mentores 3
+
+//! Variables para Sección 4 Mentores
+$seccion4mentores-padding-lg: 50px 25px 0px 25px; // Padding grande para la sección mentores 4
+$seccion4mentores-img-max-width: 100%; // Ancho máximo de la imagen en la sección mentores 4
+
+
+//? Página testimonios
+
+// Variables de colores
+$testimonios-bg-color: map-get($colors, primary); // Fondo verde para la sección hero
+$testimonios-text-color: map-get($colors, white); // Color blanco para el texto
+$testimonios-font-size-lg: 30px; // Tamaño de fuente grande para títulos en la sección hero
+$testimonios-font-size-md: 24px; // Tamaño de fuente mediano para títulos en la sección hero
+
+// Variables para la sección de videos de testimonios
+$testimonio-videos-bg-color: map-get($colors, white); // Fondo claro para la sección de videos
+$testimonio-videos-title-color: $primary-color; // Color para los títulos de la sección de videos
+$testimonio-video-bg-color: map-get($colors, white); // Fondo blanco para cada video
+$testimonio-video-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra de los contenedores de videos
+
+// Variables para botones
+$btn-link-bg-color: map-get($colors, primary); // Color de fondo del botón
+$btn-link-hover-bg-color: map-get($colors, secondary); // Color de fondo del botón en hover
+$btn-link-text-color: map-get($colors, white); // Color del texto del botón
+$btn-link-border-radius: 25px; // Radio de borde del botón

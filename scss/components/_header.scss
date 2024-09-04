@@ -1,0 +1,34 @@
+// !Header//
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: $header-bg-color;
+
+    .navbar-brand {
+        img {
+            max-height: $logo-max-height;
+            padding-left: $navbar-brand-padding-left;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $primary-color;
+            font-weight: 700;
+            font-style: normal;
+            transition: color 0.3s;
+            margin-left: $nav-link-margin-left;
+
+            &:hover,
+            &:active {
+                color: $highlight-color;
+            }
+        }
+    }
+}

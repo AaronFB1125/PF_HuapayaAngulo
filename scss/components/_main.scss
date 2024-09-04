@@ -1,0 +1,703 @@
+//? Página Index
+
+//! Sección Hero
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: $padding-hero-lg;
+    margin-top: -70px;
+    background-image: url('../img/baner-principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.principal {
+    padding-bottom: 30px;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+
+    // Aseguramos que el estilo `.verde` no sea sobrescrito
+    span.verde {
+        color: map-get($colors, primary) !important;
+    }
+}
+
+.column2-hero {
+    padding-bottom: $padding-column2-bottom;
+    padding-right: $padding-column2-right;
+    line-height: $line-height-md;
+    font-size: 18px;
+}
+
+.btn-link {
+    @include btn-style(map-get($colors, primary), map-get($colors, white));
+
+    &:hover,
+    &:active {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+
+//! Sección de imágenes
+
+.image-section {
+    padding: $image-padding;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: $image-gap;
+}
+
+.image-container img {
+    max-width: $image-max-width-lg; // Ajuste para que quepan 6 imágenes en una fila
+    height: auto;
+}
+
+
+//! Sección 2
+
+.celeste {
+    color: map-get($colors, secondary); // Reutilizamos el color celeste ya definido
+}
+
+.seccion2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding-seccion2-lg;
+    background-color: $seccion2-bg-color;
+}
+
+.seccion2 .texto2oscuro {
+    margin-right: 10%;
+}
+
+.encabezado2 {
+    padding-bottom: 30px;
+    font-size: $font-size-encabezado2-lg;
+    line-height: 1.2;
+}
+
+.parrafonormal {
+    font-size: $paragraph-font-size2-lg;
+    line-height: 1.3;
+}
+
+.parrafonormalcentro {
+    font-size: $paragraph-font-size2-lg;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.imagenseccion2 {
+    align-items: center;
+    max-height: 400px;
+    width: auto;
+}
+
+.boton-sección2 {
+    margin-top: $margin-top-boton2;
+}
+
+.btn-link2 {
+    @include btn-style(map-get($colors, secondary), map-get($colors, white)); // Reutilizando el mixin de botones
+
+    &:hover,
+    &:active {
+        background-color: $highlight-color; // Reutilizamos el color de hover ya definido
+    }
+}
+
+
+//! Sección 3
+
+.seccion3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: $seccion3-padding-lg;
+    background-color: $seccion3-bg-color;
+    border: 2px solid $seccion3-border-color;
+    border-radius: $seccion3-border-radius;
+    margin: $seccion3-margin-lg;
+}
+
+.seccion3-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.seccion3-texto {
+    flex: 1;
+}
+
+.seccion3-texto .parrafonormalcentro {
+    // En lugar de @extend, simplemente copia las reglas necesarias
+    font-size: $paragraph-font-size3-lg;
+    line-height: 1.3;
+    padding-bottom: 5px;
+    text-align: center; // Si es necesario
+}
+
+.encabezado3 {
+    // En lugar de @extend, copia las reglas necesarias de .encabezado2
+    padding-bottom: 15px;
+    font-size: $font-size-encabezado3-lg;
+    line-height: 1.2;
+}
+
+.seccion3-imagen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion3-imagen img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.seccion3-botones {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.seccion3-botones .btn-link {
+    margin-right: 3%;
+}
+
+.seccion3-botones .btn-link2 {
+    margin-left: 3%;
+}
+
+
+//! Sección 4
+
+.seccion4 {
+    padding-top: $seccion4-padding-top;
+    padding-bottom: $seccion4-padding-bottom;
+    padding-left: $seccion4-padding-sides;
+    padding-right: $seccion4-padding-sides;
+    text-align: center;
+}
+
+.seccion4-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $seccion4-gap;
+    margin-top: $seccion4-margin-top;
+}
+
+.seccion4-item {
+    padding: 40px;
+    border: 2px solid $seccion4-border-color;
+    border-radius: $seccion4-border-radius;
+    text-align: center;
+}
+
+.seccion4-icono {
+    max-width: $seccion4-icono-max-width;
+    padding-bottom: 10px;
+}
+
+.encabezado4 {
+    padding-bottom: 10px;
+    font-size: $font-size-encabezado4;
+    line-height: 1.2;
+}
+
+.seccion4-titulo {
+    text-align: center;
+    font-size: $font-size-titulo4;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+
+.seccion4-item .parrafonormal {
+    text-align: center;
+    font-size: $font-size-parrafo4;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+
+
+//! Sección 5
+
+.seccion5 {
+    padding-top: $seccion5-padding-top;
+    padding-bottom: $seccion5-padding-bottom;
+    padding-left: $seccion5-padding-sides;
+    padding-right: $seccion5-padding-sides;
+    text-align: center;
+}
+
+.seccion5-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: $seccion5-margin-top;
+}
+
+.seccion5-item {
+    flex: 1;
+    max-width: 300px;
+    padding: 35px 20px;
+    border: 2px solid $seccion5-border-color;
+    border-radius: $seccion5-border-radius;
+    margin: 10px;
+    text-align: center;
+    background-color: $seccion5-bg-color;
+}
+
+.encabezado5 {
+    padding-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.2;
+    color: map-get($colors, primary); // Reutilizando el color primario definido
+}
+
+.seccion5-imagen {
+    width: auto;
+    height: $seccion5-img-height;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.seccion5-titulo {
+    font-size: $seccion5-font-size-titulo;
+    color: $seccion5-font-color-titulo;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.seccion5-container .parrafonormal {
+    padding-bottom: 20px;
+    font-size: $seccion5-font-size-parrafo;
+    line-height: 1.2;
+}
+
+
+//! Footer
+
+.footer {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    padding-top: $footer-padding-top;
+    padding-bottom: $footer-padding-bottom;
+    padding-left: $footer-padding-sides;
+    padding-right: $footer-padding-sides;
+    text-align: left;
+    font-size: $footer-font-size;
+    line-height: $footer-line-height;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $social-icon-size;
+    height: $social-icon-size;
+    background-color: $social-icon-bg-color;
+    color: $social-icon-color;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: $social-icon-font-size;
+}
+
+.footer-redtexto {
+    padding-bottom: 10px;
+}
+
+.footer-pago {
+    padding-bottom: 5px;
+}
+
+.footer-payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-payment img {
+    max-width: 90px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: $footer-bottom-margin-top;
+    border-top: 1px solid $footer-border-top-color;
+    padding-top: $footer-bottom-padding-top;
+}
+
+
+//? Página Finance
+
+//! Sección Hero2
+
+.hero2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: $hero2-padding-lg;
+    margin-top: -70px;
+    background-image: url('../img/pre-3-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $hero2-bg-overlay;
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
+//! Sección 2 Finance
+
+.seccion2finance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: $seccion2finance-padding-lg;
+    background-color: $seccion2finance-bg-color;
+}
+
+.accordion-button {
+    background-color: $accordion-bg-color;
+    font-weight: $accordion-font-weight;
+}
+
+.accordion-body img {
+    width: 100%;
+    height: auto;
+    border-radius: $accordion-border-radius;
+    margin-bottom: 15px;
+}
+
+.info-video {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.info-video iframe {
+    width: $video-width-lg;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    border-radius: $video-border-radius;
+    margin-bottom: 30px;
+}
+
+
+//? Página Nosotros
+
+//! Header Nosotros
+.header1 {
+    background-color: $header-bg-color-nosotros; // Aplica la transparencia específica para esta página
+}
+
+//! Sección Hero
+.nosotroshero {
+    font-size: $nosotros-hero-font-size-lg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $nosotros-hero-padding-lg;
+    text-align: center;
+    height: 100vh;
+    background-color: $nosotros-hero-bg-color;
+    color: $nosotros-hero-font-color;
+  }
+  
+  .nosotrostexthero {
+    padding-bottom: 25px;
+  }
+  
+  //! Sección 2
+  .nosotrossection2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $nosotros-section2-padding-lg;
+    gap: $nosotros-section2-gap-lg;
+  }
+  
+  .imagen2nosotros {
+    max-width: 450px;
+    border-radius: 50px;
+  }
+  
+  .seccion2nosotros {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  .encabezados2nosotros {
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  
+
+  //! Sección Valores
+  .valores-section {
+    text-align: center;
+    padding: $valores-padding-lg;
+  }
+  
+  .valores-container h2 {
+    color: $valores-title-color;
+    font-size: $valores-title-font-size;
+    font-weight: $valores-title-font-weight;
+    margin-bottom: 10px;
+  }
+  
+  .valores-container p {
+    font-size: $valores-text-font-size;
+    color: $valores-text-color;
+    margin-bottom: 10px;
+  }
+  
+  .valores-container .pilares-fundamentales {
+    font-weight: bold;
+    color: $valores-title-color;
+  }
+  
+  .valores-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .valor-item {
+    background-color: $valores-item-bg-color;
+    border-radius: $valores-item-border-radius;
+    padding: $valores-item-padding;
+    box-shadow: $valores-item-box-shadow;
+    flex: 1 1 calc(25% - 40px);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .valor-item img {
+    max-width: $valores-item-img-max-width;
+    margin-bottom: 15px;
+  }
+  
+  .valor-item h3 {
+    color: $valores-item-title-color;
+    font-size: $valores-item-title-font-size;
+    margin-bottom: 10px;
+  }
+  
+  .valor-item p {
+    color: $valores-item-text-color;
+    font-size: $valores-item-text-font-size;
+  }
+
+
+//? Página Mentores
+
+/* Sección Hero */
+.hero2mentores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-left: $hero2mentores-padding-lg;
+    padding-right: $hero2mentores-padding-lg;
+    margin-top: -70px;
+    background-image: url('../img/baner-docente.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sección 2 imagenes */
+.mentores-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: $seccion2mentores-padding-lg;
+    padding-right: $seccion2mentores-padding-lg;
+}
+
+.mentor-img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: $mentores-img-border-radius;
+    box-shadow: $mentores-img-shadow;
+}
+
+/* Sección 3 */
+.mentoressection3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $mentores-section3-padding-lg;
+    gap: $mentores-section3-gap-lg;
+}
+
+/* Sección 4 */
+.seccion4mentores {
+    display: flex;
+    align-items: center;
+    padding: $seccion4mentores-padding-lg;
+}
+
+.seccion4mentores .mentores-imagen {
+    max-width: $seccion4mentores-img-max-width;
+    max-height: auto;
+}
+
+
+//! Página Testimonios
+
+// Sección Hero Testimonios
+.testimonioshero {
+    font-size: $testimonios-font-size-lg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $nosotros-hero-padding-lg;
+    text-align: center;
+    height: 100vh;
+    background-color: $testimonios-bg-color;
+    color: $testimonios-text-color;
+}
+
+// Sección Videos Testimonios
+.testimonio-videos-section {
+    padding: 80px 100px;
+    background-color: $testimonio-videos-bg-color;
+    text-align: center;
+
+    h2 {
+        font-size: 28px;
+        color: $testimonio-videos-title-color;
+        margin-bottom: 10px;
+    }
+}
+
+.testimonio-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.testimonio-video-item {
+    background-color: $testimonio-video-bg-color;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $testimonio-video-box-shadow;
+    text-align: center;
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #333;
+        margin: 10px 0;
+    }
+}
+
+// Botones
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $btn-link-bg-color;
+    color: $btn-link-text-color;
+    text-decoration: none;
+    border-radius: $btn-link-border-radius;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:active {
+        background-color: $btn-link-hover-bg-color;
+    }
+}
