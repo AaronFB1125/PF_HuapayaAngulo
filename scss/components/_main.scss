@@ -409,7 +409,7 @@
         z-index: 1;
     }
 
-    > * {
+    >* {
         position: relative;
         z-index: 2;
     }
@@ -472,74 +472,74 @@
     height: 100vh;
     background-color: $nosotros-hero-bg-color;
     color: $nosotros-hero-font-color;
-  }
-  
-  .nosotrostexthero {
+}
+
+.nosotrostexthero {
     padding-bottom: 25px;
-  }
-  
-  //! Sección 2
-  .nosotrossection2 {
+}
+
+//! Sección 2
+.nosotrossection2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: $nosotros-section2-padding-lg;
     gap: $nosotros-section2-gap-lg;
-  }
-  
-  .imagen2nosotros {
+}
+
+.imagen2nosotros {
     max-width: 450px;
     border-radius: 50px;
-  }
-  
-  .seccion2nosotros {
+}
+
+.seccion2nosotros {
     padding-left: 70px;
     padding-right: 70px;
-  }
-  
-  .encabezados2nosotros {
+}
+
+.encabezados2nosotros {
     font-size: 35px;
     font-weight: 900;
     padding-bottom: 10px;
     padding-top: 30px;
     text-align: left;
-  }
-  
+}
 
-  //! Sección Valores
-  .valores-section {
+
+//! Sección Valores
+.valores-section {
     text-align: center;
     padding: $valores-padding-lg;
-  }
-  
-  .valores-container h2 {
+}
+
+.valores-container h2 {
     color: $valores-title-color;
     font-size: $valores-title-font-size;
     font-weight: $valores-title-font-weight;
     margin-bottom: 10px;
-  }
-  
-  .valores-container p {
+}
+
+.valores-container p {
     font-size: $valores-text-font-size;
     color: $valores-text-color;
     margin-bottom: 10px;
-  }
-  
-  .valores-container .pilares-fundamentales {
+}
+
+.valores-container .pilares-fundamentales {
     font-weight: bold;
     color: $valores-title-color;
-  }
-  
-  .valores-items {
+}
+
+.valores-items {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 100px;
     justify-content: space-around;
     gap: 20px;
-  }
-  
-  .valor-item {
+}
+
+.valor-item {
     background-color: $valores-item-bg-color;
     border-radius: $valores-item-border-radius;
     padding: $valores-item-padding;
@@ -547,23 +547,23 @@
     flex: 1 1 calc(25% - 40px);
     margin: 10px;
     text-align: center;
-  }
-  
-  .valor-item img {
+}
+
+.valor-item img {
     max-width: $valores-item-img-max-width;
     margin-bottom: 15px;
-  }
-  
-  .valor-item h3 {
+}
+
+.valor-item h3 {
     color: $valores-item-title-color;
     font-size: $valores-item-title-font-size;
     margin-bottom: 10px;
-  }
-  
-  .valor-item p {
+}
+
+.valor-item p {
     color: $valores-item-text-color;
     font-size: $valores-item-text-font-size;
-  }
+}
 
 
 //? Página Mentores
