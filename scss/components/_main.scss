@@ -295,91 +295,6 @@
 }
 
 
-//! Footer
-
-.footer {
-    background-color: $footer-bg-color;
-    color: $footer-text-color;
-    padding-top: $footer-padding-top;
-    padding-bottom: $footer-padding-bottom;
-    padding-left: $footer-padding-sides;
-    padding-right: $footer-padding-sides;
-    text-align: left;
-    font-size: $footer-font-size;
-    line-height: $footer-line-height;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer-item {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 20px;
-    box-sizing: border-box;
-}
-
-.footer-logo {
-    max-width: 150px;
-    margin-bottom: 5px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: $social-icon-size;
-    height: $social-icon-size;
-    background-color: $social-icon-bg-color;
-    color: $social-icon-color;
-    border-radius: 50%;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-}
-
-.social-icon i {
-    font-size: $social-icon-font-size;
-}
-
-.footer-redtexto {
-    padding-bottom: 10px;
-}
-
-.footer-pago {
-    padding-bottom: 5px;
-}
-
-.footer-payment {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-
-.footer-payment img {
-    max-width: 90px;
-    height: auto;
-    box-sizing: border-box;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: $footer-bottom-margin-top;
-    border-top: 1px solid $footer-border-top-color;
-    padding-top: $footer-bottom-padding-top;
-}
-
-
 //? Página Finance
 
 //! Sección Hero2
@@ -454,11 +369,6 @@
 
 
 //? Página Nosotros
-
-//! Header Nosotros
-.header1 {
-    background-color: $header-bg-color-nosotros; // Aplica la transparencia específica para esta página
-}
 
 //! Sección Hero
 .nosotroshero {

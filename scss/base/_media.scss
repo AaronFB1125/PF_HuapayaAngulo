@@ -218,6 +218,7 @@
 // !Sección 4
 
 @media (max-width: 992px) {
+  
   .seccion4-container {
     display: none;
   }
@@ -246,10 +247,14 @@
 }
 
 @media (max-width: 576px) {
+
+  .seccion4-container {
+    display: none;
+  }
+
   .carousel-item .seccion4-item {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
   }
 
   .seccion4-item .parrafonormalcentro {
@@ -391,7 +396,7 @@
 //? Página Nosotros
 
 //! Media queries para la Sección Hero
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .nosotroshero {
     padding: $nosotros-hero-padding-md;
     font-size: $nosotros-hero-font-size-md;
@@ -432,7 +437,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .nosotroshero {
     padding: $nosotros-hero-padding-sm;
     font-size: $nosotros-hero-font-size-sm;
